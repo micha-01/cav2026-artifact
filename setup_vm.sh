@@ -16,7 +16,7 @@ sudo apt --yes install python3.12-venv
 code --install-extension viper-admin.viper
 
 # install nagini
-git clone git@github.com:micha-01/Nagini.git
+git clone https://github.com/micha-01/Nagini.git
 cd Nagini
 git checkout object_equality
 pip3 install .
