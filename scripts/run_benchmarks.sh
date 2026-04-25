@@ -1,0 +1,26 @@
+#!/bin/bash
+
+BENCHMARKS=$HOME/Nagini/benchmarks
+LOGS=$HOME/logs
+
+mkdir -p $BENCHMARKS
+mkdir -p $LOGS
+
+echo "Starting Benchmarks: $BENCHMARKS."
+
+i=0
+N=6
+TIMESTAMP=$(date "+%Y%m%d_%H:%M:%S")
+FILES="$BENCHMARKS"/*.py
+NUM_FILES=$(ls $FILES | wc -l)
+for FILE in $FILES; do
+    ((i++))
+    FILENAME="${FILE##*/}"
+    echo "Starting Benchmark $i/$NUM_FILES: $FILENAME."
+    {
+        echo "# Benchmark $i: $FILENAME."
+        nagini --benchmark $N --verifier=carbon --boogie $BOOGIE_EXE "$FILE"
+        echo ""
+    } >> "$LOGS/run_$TIMESTAMP.txt"
+    echo "Done with Benchmark $i."
+done
