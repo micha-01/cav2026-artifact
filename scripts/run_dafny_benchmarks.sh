@@ -13,7 +13,6 @@ echo "------------------------------------------------------------"
 
 i=0
 N=8
-TIMESTAMP=$(date "+%Y%m%d_%H:%M:%S")
 FILES="$BENCHMARKS"/*_encoded.dfy
 NUM_FILES=$(ls $FILES | wc -l)
 for FILE in $FILES; do
@@ -24,9 +23,9 @@ for FILE in $FILES; do
 
     for j in {1..8}; do
         {
-            time -f "Time [s]: %e" dafny verify "$FILE"
+            /usr/bin/time -f "Time [s]: %e" dafny verify "$FILE"
             echo
-        } >> "$OUTPUT_FILE"
-        echo "Done with Benchmark $i."
+        } >> "$OUTPUT_FILE" 2>&1
     done
+    echo "Done with Benchmark $i."
 done
