@@ -17,7 +17,7 @@ sudo apt --yes install dotnet-sdk-8.0
 
 # switch to artifact user
 U=artifact
-USER_HOME="/home/$USER"
+USER_HOME="/home/$U"
 sudo -u "$U" bash << 'EOF'
 set -e
 
