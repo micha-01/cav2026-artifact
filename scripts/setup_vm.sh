@@ -15,6 +15,9 @@ sudo apt --yes install python3-pip
 sudo apt --yes install python3.12-venv
 sudo apt --yes install dotnet-sdk-8.0
 
+# switch to artifact user
+su artifact
+
 code --install-extension viper-admin.viper
 
 # install nagini
