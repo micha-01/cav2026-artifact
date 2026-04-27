@@ -22,7 +22,7 @@ class E {
     }
 
     method prove_trans(other: object, o3: object) {
-        reveal lt;
+        reveal lt, F.lt;
         assume lt(o3);
 
         if (other is E) {
@@ -66,7 +66,7 @@ class F {
     } 
 
     method prove_trans(other: object, o3: object) {
-        reveal lt;
+        reveal lt, E.lt;
         assume lt(o3);
 
         if (other is E) {
