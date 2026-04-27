@@ -17,13 +17,13 @@ sudo apt --yes install dotnet-sdk-8.0
 
 # switch to artifact user
 sudo -u artifact bash << 'EOF'
-HOME_USER="/home/artifact"
+USER_HOME="/home/artifact"
 set -e
 
 code --install-extension viper-admin.viper
 
 # install nagini
-cd $HOME_USER
+cd $USER_HOME
 python3 -m venv venv
 source venv/bin/activate
 git clone https://github.com/micha-01/Nagini.git
@@ -41,10 +41,10 @@ git checkout -b main --track origin/main
 # install dafny
 cd /tmp
 wget https://github.com/dafny-lang/dafny/releases/download/v4.11.0/dafny-4.11.0-x64-ubuntu-22.04.zip
-unzip /tmp/dafny-4.11.0-x64-ubuntu-22.04.zip -d $HOME_USER
-echo 'export PATH="$HOME_USER/dafny/dafny:$PATH"' >> $HOME_USER/.bashrc
-source $HOME_USER/.bashrc
-cd $HOME_USER
+unzip /tmp/dafny-4.11.0-x64-ubuntu-22.04.zip -d $USER_HOME
+echo 'export PATH="$USER_HOME/dafny/dafny:$PATH"' >> $USER_HOME/.bashrc
+source $USER_HOME/.bashrc
+cd $USER_HOME
 
 # done
 echo "-------------------------------------------------------------"
