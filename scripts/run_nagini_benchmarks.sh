@@ -11,7 +11,7 @@ export MYPYPATH=$HOME/Nagini/src
 mkdir -p $BENCHMARKS
 mkdir -p $LOGS
 
-echo "Starting Nagini Benchmarks: $BENCHMARKS." | tee "$OUTPUT_FILE"
+echo "Starting Nagini Benchmarks: $BENCHMARKS." | tee -a "$OUTPUT_FILE"
 echo "-------------------------------------------------------------"
 
 i=0
