@@ -1,0 +1,230 @@
+This is an example output for the Nagini Benchmarks.
+All except the following benchmarks should verify:
+core_equality_1F, core_equality_2F, core_equality_3F, point
+
+
+Starting Nagini Benchmarks: /home/artifact/Nagini/benchmarks.
+# Benchmark 1: birds.py (/home/artifact/Nagini/benchmarks/birds.py).
+Run, Total, Start, End, Time
+0, 8, 1777310833.6895561, 1777310865.170922, 31.48136591911316
+1, 8, 1777310865.1709373, 1777310893.0303714, 27.859434127807617
+2, 8, 1777310893.0303876, 1777310921.7049775, 28.67458987236023
+3, 8, 1777310921.7049918, 1777310949.0232909, 27.318299055099487
+4, 8, 1777310949.0233068, 1777310975.4837496, 26.460442781448364
+5, 8, 1777310975.4837654, 1777311003.5616386, 28.07787322998047
+6, 8, 1777311003.5616546, 1777311030.333864, 26.772209405899048
+7, 8, 1777311030.33388, 1777311058.128941, 27.795061111450195
+Verification successful
+Verification took 27.80 seconds.
+
+# Benchmark 2: core_equality_1F.py (/home/artifact/Nagini/benchmarks/core_equality_1F.py).
+Run, Total, Start, End, Time
+0, 8, 1777311073.392704, 1777311086.3667321, 12.97402811050415
+1, 8, 1777311086.366748, 1777311098.7729197, 12.406171560287476
+2, 8, 1777311098.7729354, 1777311111.042733, 12.269797563552856
+3, 8, 1777311111.0427465, 1777311122.8939462, 11.851199626922607
+4, 8, 1777311122.8939607, 1777311134.7169816, 11.823020935058594
+5, 8, 1777311134.7169945, 1777311146.2553005, 11.53830599784851
+6, 8, 1777311146.2553344, 1777311157.5445817, 11.289247274398804
+7, 8, 1777311157.5445948, 1777311168.9955344, 11.450939655303955
+Verification failed
+Errors:
+Postcondition of __eq__ might not hold. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    return False might not hold. (core_equality_1F.py@12.4--15.20)
+Postcondition of __eq__ might not hold. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    return True might not hold. (core_equality_1F.py@22.4--25.19)
+Postcondition of __eq__ might not hold. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies((type(other) == E), Result()))    if (type(other) == E):        return True    return False might not hold. (core_equality_1F.py@32.4--38.20)
+Verification took 11.45 seconds.
+
+# Benchmark 3: core_equality_1.py (/home/artifact/Nagini/benchmarks/core_equality_1.py).
+Run, Total, Start, End, Time
+0, 8, 1777311184.1783776, 1777311215.063159, 30.88478136062622
+1, 8, 1777311215.0631762, 1777311245.2284942, 30.16531801223755
+2, 8, 1777311245.2285104, 1777311274.0051112, 28.77660083770752
+3, 8, 1777311274.005126, 1777311302.6474268, 28.642300844192505
+4, 8, 1777311302.6474438, 1777311330.7882628, 28.14081907272339
+5, 8, 1777311330.7882786, 1777311358.9997957, 28.211517095565796
+6, 8, 1777311358.9998446, 1777311388.056713, 29.05686855316162
+7, 8, 1777311388.056729, 1777311416.6410327, 28.584303617477417
+Verification successful
+Verification took 28.58 seconds.
+
+# Benchmark 4: core_equality_2F.py (/home/artifact/Nagini/benchmarks/core_equality_2F.py).
+Run, Total, Start, End, Time
+0, 8, 1777311433.0572605, 1777311466.84092, 33.7836594581604
+1, 8, 1777311466.8409376, 1777311498.3079703, 31.46703267097473
+2, 8, 1777311498.3079863, 1777311527.0800202, 28.77203392982483
+3, 8, 1777311527.0800338, 1777311555.3715713, 28.291537523269653
+4, 8, 1777311555.3715842, 1777311584.4027824, 29.031198263168335
+5, 8, 1777311584.402796, 1777311613.7581594, 29.355363368988037
+6, 8, 1777311613.758173, 1777311642.09766, 28.339487075805664
+7, 8, 1777311642.097674, 1777311670.9217687, 28.824094772338867
+Verification failed
+Errors:
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies(((type(other) == A) or (type(other) == B) or (self is other)), Result()))    if ((type(other) == A) or (type(other) == B) or (self is other)):        return True    return False might not hold. (core_equality_2F.py@31.4--37.20)
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies(((type(other) == C) or (type(other) == D) or (self is other)), Result()))    if ((type(other) == C) or (type(other) == D) or (self is other)):        return True    return False might not hold. (core_equality_2F.py@46.4--52.20)
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies((self is other), Result()))    Ensures(Implies((type(self) == type(other)), (Result() == (self.geti() == cast(E, other).geti()))))    Ensures(Implies((type(other) == F), (Result() == (self.geti() == cast(F, other).geti()))))    if (self is other):        return True    elif (type(self) == type(other)):        return (self.geti() == cast(E, other).geti())    elif (type(other) == F):        return (self.geti() == cast(F, other).geti())    return False might not hold. (core_equality_2F.py@76.4--92.9)
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies((type(self) == type(other)), (Result() == ((self.geti() == cast(G, other).geti()) and (self.gets() == cast(G, other).gets()) and (self.getb() == cast(G, other).getb())))))    Ensures(Implies((type(other) == H), (Result() == ((self.geti() == cast(H, other).geti()) and (self.gets() == cast(H, other).gets()) and (self.getb() == cast(H, other).getb())))))    if (type(self) == type(other)):        return ((self.geti() == cast(G, other).geti()) and (self.gets() == cast(G, other).gets()) and (self.getb() == cast(G, other).getb()))    elif (type(other) == H):        return ((self.geti() == cast(H, other).geti()) and (self.gets() == cast(H, other).gets()) and (self.getb() == cast(H, other).getb()))    return False might not hold. (core_equality_2F.py@140.4--170.9)
+Verification took 28.83 seconds.
+
+# Benchmark 5: core_equality_2.py (/home/artifact/Nagini/benchmarks/core_equality_2.py).
+Run, Total, Start, End, Time
+0, 8, 1777311688.2035558, 1777311725.1323602, 36.92880439758301
+1, 8, 1777311725.1323771, 1777311757.6912823, 32.55890512466431
+2, 8, 1777311757.6912982, 1777311789.9694402, 32.27814197540283
+3, 8, 1777311789.9694574, 1777311822.8212526, 32.8517951965332
+4, 8, 1777311822.8212664, 1777311853.957846, 31.136579513549805
+5, 8, 1777311853.9578612, 1777311885.7908077, 31.83294653892517
+6, 8, 1777311885.790825, 1777311917.758568, 31.967743158340454
+7, 8, 1777311917.7585838, 1777311949.6608787, 31.902294874191284
+Verification successful
+Verification took 31.90 seconds.
+
+# Benchmark 6: core_equality_3F.py (/home/artifact/Nagini/benchmarks/core_equality_3F.py).
+Run, Total, Start, End, Time
+0, 8, 1777311967.0834794, 1777312002.6525393, 35.5690598487854
+1, 8, 1777312002.6525552, 1777312033.0369473, 30.384392023086548
+2, 8, 1777312033.0369778, 1777312063.1021767, 30.06519889831543
+3, 8, 1777312063.10219, 1777312092.9052448, 29.803054809570312
+4, 8, 1777312092.9052598, 1777312122.7241223, 29.818862438201904
+5, 8, 1777312122.7241373, 1777312151.6629448, 28.938807487487793
+6, 8, 1777312151.6629639, 1777312182.3341553, 30.671191453933716
+7, 8, 1777312182.33417, 1777312212.1888494, 29.854679346084595
+Verification failed
+Errors:
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies(((type(self) == type(other)) or (type(other) == E) or (type(other) == F) or (self is other)), Result()))    if ((type(self) == type(other)) or (type(other) == E) or (type(other) == F) or (self is other)):        return True    return False might not hold. (core_equality_3F.py@18.4--26.20)
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies((type(self) == type(other)), (Result() == ((self.geti() == cast(H, other).geti()) and (self.gets() == cast(H, other).gets()) and (self.getb() == cast(H, other).getb())))))    Ensures(Implies((type(other) == G), (Result() == ((self.geti() == cast(G, other).geti()) and (self.gets() == cast(G, other).gets()) and (self.getb() == cast(G, other).getb())))))    Ensures(Implies((type(other) == I), (Result() == ((self.geti() == cast(I, other).geti()) and (self.gets() == cast(I, other).gets()) and (self.getb() == cast(I, other).getb())))))    if (type(self) == type(other)):        return ((self.geti() == cast(H, other).geti()) and (self.gets() == cast(H, other).gets()) and (self.getb() == cast(H, other).getb()))    elif (type(other) == G):        return ((self.geti() == cast(G, other).geti()) and (self.gets() == cast(G, other).gets()) and (self.getb() == cast(G, other).getb()))    elif (type(other) == I):        return ((self.geti() == cast(I, other).geti()) and (self.gets() == cast(I, other).gets()) and (self.getb() == cast(I, other).getb()))    return False might not hold. (core_equality_3F.py@116.4--158.9)
+Assert might fail. Assertion @Puredef __eq__(self, other: object) -> bool:    Requires(state_pred(self))    Requires(Implies((not Stateless(other)), state_pred(other)))    Ensures(Implies((type(self) == type(other)), (Result() == ((self.geti() == cast(I, other).geti()) and (self.gets() == cast(I, other).gets()) and (self.getb() == cast(I, other).getb())))))    Ensures(Implies((type(other) == G), (Result() == ((self.geti() == cast(G, other).geti()) and (self.gets() == cast(G, other).gets()) and (self.getb() == cast(G, other).getb())))))    Ensures(Implies((type(other) == H), (Result() == ((self.geti() == cast(H, other).geti()) and (self.gets() == cast(H, other).gets()) and (self.getb() == cast(H, other).getb())))))    if (type(self) == type(other)):        return ((self.geti() == cast(I, other).geti()) and (self.gets() == cast(I, other).gets()) and (self.getb() == cast(I, other).getb()))    elif (type(other) == G):        return ((self.geti() == cast(G, other).geti()) and (self.gets() == cast(G, other).gets()) and (self.getb() == cast(G, other).getb()))    elif (type(other) == H):        return ((self.geti() == cast(H, other).geti()) and (self.gets() == cast(H, other).gets()) and (self.getb() == cast(H, other).getb()))    return False might not hold. (core_equality_3F.py@186.4--228.9)
+Verification took 29.86 seconds.
+
+# Benchmark 7: core_equality_3.py (/home/artifact/Nagini/benchmarks/core_equality_3.py).
+Run, Total, Start, End, Time
+0, 8, 1777312230.2486882, 1777312264.9228227, 34.674134492874146
+1, 8, 1777312264.9228394, 1777312298.4705114, 33.54767203330994
+2, 8, 1777312298.4705272, 1777312329.9785707, 31.50804352760315
+3, 8, 1777312329.9785867, 1777312361.1876526, 31.209065914154053
+4, 8, 1777312361.1876695, 1777312392.4265406, 31.238871097564697
+5, 8, 1777312392.4265556, 1777312421.5532055, 29.126649856567383
+6, 8, 1777312421.5532217, 1777312452.7309675, 31.177745819091797
+7, 8, 1777312452.7309835, 1777312483.5884638, 30.85748028755188
+Verification successful
+Verification took 30.86 seconds.
+
+# Benchmark 8: fraction_int.py (/home/artifact/Nagini/benchmarks/fraction_int.py).
+Run, Total, Start, End, Time
+0, 8, 1777312501.0854554, 1777312524.481361, 23.39590549468994
+1, 8, 1777312524.4813783, 1777312545.2759755, 20.794597148895264
+2, 8, 1777312545.2759929, 1777312563.3230424, 18.047049522399902
+3, 8, 1777312563.3230586, 1777312582.2002206, 18.877161979675293
+4, 8, 1777312582.2002501, 1777312601.2816205, 19.08137035369873
+5, 8, 1777312601.2816358, 1777312618.859522, 17.57788634300232
+6, 8, 1777312618.8595374, 1777312636.6090558, 17.749518394470215
+7, 8, 1777312636.6090703, 1777312656.041482, 19.432411670684814
+Verification successful
+Verification took 19.43 seconds.
+
+# Benchmark 9: hash_consistency_multiple_fields.py (/home/artifact/Nagini/benchmarks/hash_consistency_multiple_fields.py).
+Run, Total, Start, End, Time
+0, 8, 1777312672.9865935, 1777312695.3098617, 22.323268175125122
+1, 8, 1777312695.3098772, 1777312716.7444088, 21.434531688690186
+2, 8, 1777312716.744425, 1777312737.1438415, 20.39941644668579
+3, 8, 1777312737.143856, 1777312757.330297, 20.18644094467163
+4, 8, 1777312757.330319, 1777312776.7466366, 19.41631770133972
+5, 8, 1777312776.7466514, 1777312796.5454872, 19.79883575439453
+6, 8, 1777312796.5455027, 1777312815.680334, 19.134831428527832
+7, 8, 1777312815.6803503, 1777312834.6810431, 19.00069284439087
+Verification successful
+Verification took 19.00 seconds.
+
+# Benchmark 10: less_than_and_greater_or_equal.py (/home/artifact/Nagini/benchmarks/less_than_and_greater_or_equal.py).
+Run, Total, Start, End, Time
+0, 8, 1777312851.5516117, 1777312871.6969604, 20.14534878730774
+1, 8, 1777312871.696977, 1777312889.4594018, 17.7624249458313
+2, 8, 1777312889.459446, 1777312906.8761241, 17.416678190231323
+3, 8, 1777312906.876145, 1777312923.517233, 16.641088008880615
+4, 8, 1777312923.51725, 1777312940.5163517, 16.999101638793945
+5, 8, 1777312940.5163672, 1777312957.5323863, 17.016019105911255
+6, 8, 1777312957.5324016, 1777312973.9962409, 16.463839292526245
+7, 8, 1777312973.9962568, 1777312990.5675085, 16.57125163078308
+Verification successful
+Verification took 16.57 seconds.
+
+# Benchmark 11: less_than.py (/home/artifact/Nagini/benchmarks/less_than.py).
+Run, Total, Start, End, Time
+0, 8, 1777313006.4302297, 1777313024.3390474, 17.908817768096924
+1, 8, 1777313024.3390641, 1777313040.1125202, 15.77345609664917
+2, 8, 1777313040.1125374, 1777313055.435451, 15.322913646697998
+3, 8, 1777313055.4354672, 1777313071.2822142, 15.846746921539307
+4, 8, 1777313071.2822297, 1777313086.3079119, 15.025682210922241
+5, 8, 1777313086.3079283, 1777313100.6684058, 14.360477447509766
+6, 8, 1777313100.668422, 1777313115.0999944, 14.431572437286377
+7, 8, 1777313115.1000104, 1777313130.396404, 15.296393632888794
+Verification successful
+Verification took 15.30 seconds.
+
+# Benchmark 12: map.py (/home/artifact/Nagini/benchmarks/map.py).
+Run, Total, Start, End, Time
+0, 8, 1777313146.2357883, 1777313173.235312, 26.999523639678955
+1, 8, 1777313173.2353284, 1777313198.0759006, 24.840572118759155
+2, 8, 1777313198.0759277, 1777313221.5966284, 23.520700693130493
+3, 8, 1777313221.5966458, 1777313245.8134322, 24.21678638458252
+4, 8, 1777313245.813448, 1777313268.0988896, 22.285441637039185
+5, 8, 1777313268.0989037, 1777313289.9345846, 21.835680961608887
+6, 8, 1777313289.9345999, 1777313312.0231805, 22.08858060836792
+7, 8, 1777313312.0231972, 1777313334.8104458, 22.787248611450195
+Verification successful
+Verification took 22.79 seconds.
+
+# Benchmark 13: pointpatterns.py (/home/artifact/Nagini/benchmarks/pointpatterns.py).
+Run, Total, Start, End, Time
+0, 8, 1777313352.6628048, 1777313378.3985028, 25.735697984695435
+1, 8, 1777313378.3985188, 1777313402.1820288, 23.783509969711304
+2, 8, 1777313402.182046, 1777313426.0562723, 23.874226331710815
+3, 8, 1777313426.0562901, 1777313449.743889, 23.687598943710327
+4, 8, 1777313449.7439055, 1777313472.699879, 22.955973386764526
+5, 8, 1777313472.6998947, 1777313495.133042, 22.433147430419922
+6, 8, 1777313495.1330578, 1777313517.4322002, 22.299142360687256
+7, 8, 1777313517.4322186, 1777313540.2845757, 22.852357149124146
+Verification successful
+Verification took 22.85 seconds.
+
+# Benchmark 14: point.py (/home/artifact/Nagini/benchmarks/point.py).
+Run, Total, Start, End, Time
+0, 8, 1777313557.7750955, 1777313577.569722, 19.794626474380493
+1, 8, 1777313577.5697396, 1777313595.9430394, 18.373299837112427
+2, 8, 1777313595.9430547, 1777313615.048931, 19.105876207351685
+3, 8, 1777313615.048945, 1777313632.8513114, 17.802366495132446
+4, 8, 1777313632.851325, 1777313650.6662793, 17.81495428085327
+5, 8, 1777313650.6662924, 1777313668.5384455, 17.87215304374695
+6, 8, 1777313668.5384588, 1777313686.0385718, 17.500113010406494
+7, 8, 1777313686.038585, 1777313703.729627, 17.691041946411133
+Verification failed
+Errors:
+Postcondition of __eq__ might not hold. Assertion (Result() == ((self.getx() == cast(Point, other).getx()) and (self.gety() == cast(Point, other).gety()))) might not hold. (point.py@21.16--23.9, via override at point.py@53.4--70.9)
+Postcondition of __eq__ might not hold. Assertion (Result() == ((self.getx() == cast(Point, other).getx()) and (self.gety() == cast(Point, other).gety()))) might not hold. (point.py@21.16--23.9, via override at point.py@84.4--98.20)
+Verification took 17.69 seconds.
+
+# Benchmark 15: stateless.py (/home/artifact/Nagini/benchmarks/stateless.py).
+Run, Total, Start, End, Time
+0, 8, 1777313720.586027, 1777313739.8826485, 19.296621561050415
+1, 8, 1777313739.8826635, 1777313757.130799, 17.248135566711426
+2, 8, 1777313757.1308172, 1777313774.275741, 17.14492392539978
+3, 8, 1777313774.2757652, 1777313790.975198, 16.699432849884033
+4, 8, 1777313790.9752138, 1777313807.031452, 16.056238174438477
+5, 8, 1777313807.0314686, 1777313824.4208293, 17.389360666275024
+6, 8, 1777313824.4208446, 1777313841.4372454, 17.016400814056396
+7, 8, 1777313841.4372609, 1777313858.6475477, 17.210286855697632
+Verification successful
+Verification took 17.21 seconds.
+
+# Benchmark 16: string.py (/home/artifact/Nagini/benchmarks/string.py).
+Run, Total, Start, End, Time
+0, 8, 1777313875.8225563, 1777313895.7721052, 19.949548959732056
+1, 8, 1777313895.7721233, 1777313914.0310545, 18.258931159973145
+2, 8, 1777313914.03107, 1777313931.8005712, 17.769501209259033
+3, 8, 1777313931.800588, 1777313948.5471103, 16.746522426605225
+4, 8, 1777313948.5471263, 1777313966.2375796, 17.69045329093933
+5, 8, 1777313966.2375963, 1777313983.7930877, 17.55549144744873
+6, 8, 1777313983.7931037, 1777314001.4174867, 17.624382972717285
+7, 8, 1777314001.417503, 1777314018.7439432, 17.32644009590149
+Verification successful
+Verification took 17.33 seconds.
+
