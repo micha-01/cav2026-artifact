@@ -42,14 +42,14 @@ git checkout -b main --track origin/main
 cd /tmp
 wget https://github.com/dafny-lang/dafny/releases/download/v4.11.0/dafny-4.11.0-x64-ubuntu-22.04.zip
 unzip /tmp/dafny-4.11.0-x64-ubuntu-22.04.zip -d $USER_HOME
-echo 'export PATH="$USER_HOME/dafny/dafny:$PATH"' >> $USER_HOME/.bashrc
-source $USER_HOME/.bashrc
 cd $USER_HOME
+
+EOF
+
+ln -sf /home/artifact/dafny/dafny /usr/local/bin/dafny
 
 # done
 echo "-------------------------------------------------------------"
 echo "-------------------------------------------------------------"
 echo "-------------------------------------------------------------"
 echo "The installation of the Aritfact is done!"
-
-EOF
