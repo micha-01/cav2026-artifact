@@ -39,10 +39,9 @@ git fetch origin
 git checkout -b main --track origin/main
 
 # install dafny
-mkdir -p $HOME_USER/dafny
 cd /tmp
 wget https://github.com/dafny-lang/dafny/releases/download/v4.11.0/dafny-4.11.0-x64-ubuntu-22.04.zip
-unzip /tmp/dafny-4.11.0-x64-ubuntu-22.04.zip -d $HOME_USER/dafny
+unzip /tmp/dafny-4.11.0-x64-ubuntu-22.04.zip -d $HOME_USER
 echo 'export PATH="$HOME_USER/dafny/dafny:$PATH"' >> $HOME_USER/.bashrc
 source $HOME_USER/.bashrc
 cd $HOME_USER
