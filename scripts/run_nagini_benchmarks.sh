@@ -12,7 +12,7 @@ mkdir -p $BENCHMARKS
 mkdir -p $LOGS
 
 echo "Starting Nagini Benchmarks: $BENCHMARKS." | tee "$OUTPUT_FILE"
-echo "--------------------------------------"
+echo "-------------------------------------------------------------"
 
 i=0
 N=8
