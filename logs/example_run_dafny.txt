@@ -1,0 +1,422 @@
+This is an example output for the Dafny Benchmarks.
+All benchmarks should verify successfully.
+
+Starting Dafny Benchmarks: /home/artifact/Dafny_Benchmarks.
+# Benchmark 1: Fractions_encoded.dfy (/home/artifact/Dafny_Benchmarks/Fractions_encoded.dfy).
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.96
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.26
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.22
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.95
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.95
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.01
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.18
+
+Dafny_Benchmarks/Fractions_encoded.dfy(58,8): Warning: assume statement has no {:axiom} annotation
+   |
+58 |         assume equals(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(69,8): Warning: assume statement has no {:axiom} annotation
+   |
+69 |         assume equals(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(120,8): Warning: assume statement has no {:axiom} annotation
+    |
+120 |         assume equals(o3);
+    |         ^^^^^^
+
+Dafny_Benchmarks/Fractions_encoded.dfy(131,8): Warning: assume statement has no {:axiom} annotation
+    |
+131 |         assume equals(other);
+    |         ^^^^^^
+
+
+Dafny program verifier finished with 8 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.20
+
+# Benchmark 2: LessThan_encoded.dfy (/home/artifact/Dafny_Benchmarks/LessThan_encoded.dfy).
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.18
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.94
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.99
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.74
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.73
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 2.11
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.82
+
+Dafny_Benchmarks/LessThan_encoded.dfy(26,8): Warning: assume statement has no {:axiom} annotation
+   |
+26 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(37,8): Warning: assume statement has no {:axiom} annotation
+   |
+37 |         assume lt(other);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(70,8): Warning: assume statement has no {:axiom} annotation
+   |
+70 |         assume lt(o3);
+   |         ^^^^^^
+
+Dafny_Benchmarks/LessThan_encoded.dfy(81,8): Warning: assume statement has no {:axiom} annotation
+   |
+81 |         assume lt(other);
+   |         ^^^^^^
+
+
+Dafny program verifier finished with 7 verified, 0 errors
+Compilation failed because warnings were found and --allow-warnings is false
+Command exited with non-zero status 2
+Time [s]: 1.91
+
