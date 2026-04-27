@@ -23,7 +23,7 @@ for FILE in $FILES; do
     FILENAME="${FILE##*/}"
     echo "Starting Benchmark $i/$NUM_FILES: $FILENAME."
     {
-        echo "# Benchmark $i: $FILENAME."
+        echo "# Benchmark $i: $FILENAME ($FILE)."
         nagini --benchmark $N --verifier=carbon --boogie $BOOGIE_EXE "$FILE"
         echo ""
     } >> "$OUTPUT_FILE"
