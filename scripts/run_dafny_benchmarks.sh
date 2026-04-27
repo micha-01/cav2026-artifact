@@ -28,4 +28,5 @@ for FILE in $FILES; do
             echo
         } >> "$OUTPUT_FILE"
         echo "Done with Benchmark $i."
+    done
 done
