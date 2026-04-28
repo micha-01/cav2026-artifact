@@ -508,5 +508,3 @@ These were the main specification constructs for ordinary non-interference. For 
 * For probabilistic non-interference, all control flow must be low, so Nagini will prove that e.g. all branch conditions, the receiver types of all dynamically-bound calls, and the types of all raised exceptions are low. As a consequence, ``LowEvent()`` is trivially true everywhere in this mode.
 
 More information about these specification constructs and the encoding used to prove them can be found in [our TOPLAS 2020 paper on the topic](http://pm.inf.ethz.ch/publications/getpdf.php?bibname=Own&id=EilersMuellerHitz19.pdf).
-
-# Object Relations
