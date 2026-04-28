@@ -49,7 +49,7 @@ Execute the following commands (on Windows, you may have to use ``cmd`` and not 
         pip install .
 
         
-4.  Install Nagini::
+4.  Or install Nagini::
 
         pip install nagini
 
