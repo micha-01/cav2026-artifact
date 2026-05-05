@@ -23,7 +23,7 @@ for FILE in $FILES; do
 
     for j in {1..8}; do
         {
-            /usr/bin/time -f "Time [s]: %e" dafny verify "$FILE"
+            /usr/bin/time -f "Time [s]: %e" dafny verify --allow-warnings "$FILE"
             echo
         } >> "$OUTPUT_FILE" 2>&1
     done
